@@ -80,6 +80,9 @@ module MobiApi
   class NearbyMerchant < Base
   end
 
+  class MerchantType < Base
+  end
+
   class Event < Base
     belongs_to :merchant
   end
