@@ -65,6 +65,9 @@ module MobiApi
   class Account < Base
   end
 
+  class Registration < Base
+  end
+
   class User < Base
   end
 
