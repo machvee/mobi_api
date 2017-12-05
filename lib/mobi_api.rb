@@ -1,6 +1,7 @@
 require "mobi_api/version"
 require "mobi_api/configuration"
 require 'json_api_client'
+require 'byebug'
 
 module MobiApi
   class << self
@@ -55,6 +56,8 @@ module MobiApi
     end
   end
 
+  class Registration < Base
+  end
 
   class Session < Base
   end
@@ -65,43 +68,34 @@ module MobiApi
   class Account < Base
   end
 
-  class Registration < Base
-  end
-
   class User < Base
   end
 
   class Profile < Base
   end
 
-  class Merchant < Base
+  class Zone < Base
+  end
+
+  class Event < Base
+  end
+
+  class PlayableEvent < Base
+  end
+
+  class PlayableZone < Base
+  end
+
+  class EventParticipation < Base
+  end
+
+  class UserParticipation < Base
+  end
+
+  class Invitee < Base
   end
 
   class Apps < Base
   end
 
-  class NearbyMerchant < Base
-  end
-
-  class MerchantType < Base
-  end
-
-  class Event < Base
-    belongs_to :merchant
-  end
-
-  class Participant < Base
-    belongs_to :event
-  end
-
-  class UserCheckin < Base
-  end
-
-  class MerchantCheckin < Base
-    def self.table_name
-      "checkins"
-    end
-
-    belongs_to :merchant
-  end
 end

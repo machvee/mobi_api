@@ -1,6 +1,6 @@
 module MobiApi
   class Configuration
-    DEFAULT_API_HOST = "http://api.mbkze.com"
+    DEFAULT_API_HOST = "http://api.lvh.me:3000"
     DEFAULT_VERSION = 1
 
     attr_accessor :host
