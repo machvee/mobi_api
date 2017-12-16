@@ -80,6 +80,9 @@ module MobiApi
   class Event < Base
   end
 
+  class Transition < Base
+  end
+
   class PlayableEvent < Base
   end
 
