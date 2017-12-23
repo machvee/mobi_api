@@ -89,10 +89,10 @@ module MobiApi
   class PlayableZone < Base
   end
 
-  class EventParticipation < Base
+  class EventParticipant < Base
   end
 
-  class UserParticipation < Base
+  class UserParticipant < Base
   end
 
   class Invitee < Base
